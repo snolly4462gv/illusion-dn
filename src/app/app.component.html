@@ -1,20 +1,180 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<!--<h1>
+  {{title}}
+</h1>
+ <div id="myProgress">
+  <div id="myBar"></div>
+</div>
+<br>
+<button (click)="move()">Click Me</button> 
+
+<p>In this example we have turned off parallax scrolling for mobile devices. It works as expected on all desktop screens sizes.</p>
+<p>Scroll Up and Down this page to see the parallax scrolling effect.</p> -->
+
+
+<div class="icon-bar" id="menu">
+  <a href="#main">
+    <img class="logo" src="../assets/img/IM GV2 2.png">
+  </a>
+  <a class="tab-control" href="#main" (click)="MenuActiveTab=0">
+      <span [ngClass]="{'active':MenuActiveTab==0}"><i class="fa fa-home"></i></span>
+      <span [ngClass]="{'active':MenuActiveTab==0}"><p>Главная</p></span>
+    </a> 
+  <a class="tab-control" href="#what_for_you" (click)="MenuActiveTab=1">
+    <span [ngClass]="{'active':MenuActiveTab==1}"><i class="fa fa-gift"></i></span>
+    <span [ngClass]="{'active':MenuActiveTab==1}"><p>Что Вам</p></span>
+  </a> 
+  <a class="tab-control" href="#portfolio" (click)="MenuActiveTab=2">
+    <span [ngClass]="{'active':MenuActiveTab==2}"><i class="fa fa-caret-square-o-right"></i></span>
+    <span [ngClass]="{'active':MenuActiveTab==2}"><p>Портфолио</p></span>
+  </a> 
+  <a class="tab-control" href="#why_i" (click)="MenuActiveTab=3">
+      <span [ngClass]="{'active':MenuActiveTab==3}"><i class="fa fa-user-circle"></i></span>
+      <span [ngClass]="{'active':MenuActiveTab==3}"><p>Почему Я</p></span>
+    </a> 
+    <a class="tab-control" href="#uslugi" (click)="MenuActiveTab=4">
+        <span [ngClass]="{'active':MenuActiveTab==4}"><i class="fa fa-magic"></i></span>
+        <span [ngClass]="{'active':MenuActiveTab==4}"><p>Услуги</p></span>
+      </a> 
+      <a class="tab-control" href="#contacts" (click)="MenuActiveTab=5">
+          <span [ngClass]="{'active':MenuActiveTab==5}"><i class="fa fa-address-card"></i></span>
+          <span [ngClass]="{'active':MenuActiveTab==5}"><p>Контакты</p></span>
+        </a> 
+</div>
+
+<div>
+    <div class="center-block" >      
+        <iframe style="padding-top:35px;" id="player" src="https://player.vimeo.com/video/250352302?title=false&author_name=false&author_logo=false&byline=false&api=1&player_id=player" width="100%" height="450px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <p>Если у вас намечается свадьба, юбилей, корпоративное мероприятие, вечеринка, день рождения, наполните его волшебством! Звоните!</p>
+        <a href="#main"><p>Да, я хочу, чтобы о моем событии говорили с восторгом</p></a>
+    </div> 
+
+
+<div class="parallax main" id="main">
+    <h1 class="main-title"><p><b style="color: #ECBE00;">Г</b>ОРБАЧЕВ</p><p>ВЛАДИСЛАВ<b style="color: #ECBE00;">.</b></p></h1>
+    <h4 class="main-title add glitch">• ИЛЛЮЗИОНИСТ НОВОГО ПОКОЛЕНИЯ •</h4>
+    <h2 class="text-main-title">ВОЛШЕБНОЕ ШОУ НА ВАШЕМ ПРАЗДНИКЕ</h2>
+    <h2 class="text-main-title city">г. Донецк</h2>
+    
+</div>
+
+
+<div class="parallax cards" >
+  <div class="cards-content">
+  <h1 id="what_for_you">ЧТО ВЫ ПОЛУЧИТЕ?</h1>
+    <div class="progress" style="padding-top:100px;">
+      <span >ЭМОЦИИ <span id="myPrProc1"></span></span>
+      <div id="myProgress1">
+        <div id="myBar1"></div>
+      </div>
+    </div>
+
+    <div class="progress">
+        <span>ЧУДО <span id="myPrProc2"></span></span>
+        <div id="myProgress2">
+          <div id="myBar2"></div>
+        </div>
+      </div>
+
+      <div class="progress">
+          <span>ВЗЛОМ СОЗНАНИЯ <span id="myPrProc3"></span></span>
+          <div id="myProgress3">
+            <div id="myBar3"></div>
+          </div>
+        </div>
+
+        <div class="progress">
+          <span>ПРОФЕССИОНАЛИЗМ <span id="myPrProc4"></span></span>
+          <div id="myProgress4">
+            <div id="myBar4"></div>
+          </div>
+        </div>
+
+        <div class="progress">
+          <span>ЛИЧНЫЙ ПОДХОД <span id="myPrProc5"></span></span>
+          <div id="myProgress5">
+            <div id="myBar5"></div>
+          </div>
+        </div>
+  </div>
+
+</div>
+
+<div style="height:900px;background:#4D5466;" id="portfolio">
+  <!-- <h1 style="padding-left:300px;">ПОРТФОЛИО</h1> -->
+
+  <!-- <div class="row">
+    <div class="column">
+      <img src="img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img_fjords.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>
+  
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="img_nature_wide.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="img_fjords_wide.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="img_mountains_wide.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="img_lights_wide.jpg" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+  
+      <div class="column">
+        <img class="demo cursor" src="./assets/img/img_avatar.png" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./assets/img/img_avatar.png" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./assets/img/img_avatar.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./assets/img/img_avatar.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+    </div>
+    </div> -->
+
+
+
+
+
+</div>
+
+<div style="height:1200px;background:green;" id="why_i">
+
+</div>
+
+
+
+</div>
