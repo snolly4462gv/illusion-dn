@@ -260,3 +260,32 @@ a{
     height: 30px;
     background-color: #4caf50;
 } 
+
+
+
+
+
+
+
+
+
+
+
+.contacts{
+    height: 500px;
+    background-color: #2B333E;
+    width: 50%;
+    margin: 0px;
+    padding: 20px;
+    margin-left:calc( (100% - 210px) / 2 - 245px  );
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    color: white;
+    text-shadow: 2px 2px 3px black, 0 0 2px black; /* Параметры тени */
+}
+.contacts h1{
+    font-size: 40px;
+    padding-top: 40px;
+}

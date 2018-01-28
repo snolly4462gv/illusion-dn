@@ -34,7 +34,7 @@ export class AppComponent {
           top = $(id).offset().top;
         console.log(id, top);
         //анимируем переход на расстояние - top за 1500 мс
-       // if(id=="#what_for_you")top+=400;
+        //if(id=="#contacts")top-=400;
         $('body,html').animate({scrollTop: top}, 1400);
       });
     });
@@ -110,6 +110,9 @@ export class AppComponent {
     });
     
   }
+
+
+
 
 
 
