@@ -184,7 +184,7 @@ a{
     padding-left: 220px;
     width: 100%;
 }
-.parallax.cards .cards-content h1{
+.volName{
     font-family: 'Montserrat', sans-serif; 
     padding-top:100px; 
     font-weight: 600;
@@ -195,6 +195,10 @@ a{
 
 }
 
+.progresses{
+    
+    background-color: rgba(35, 42, 52, 0.466);
+}
 .parallax.cards .cards-content .progress{
     padding-top: 30px;
     padding-left:calc(20% + 215px);
@@ -205,14 +209,19 @@ a{
     background-color: #00000000;
 }
 .parallax.cards .cards-content .progress span{
-    font-family: 'Montserrat', sans-serif; 
-    padding-left:20px; 
-    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;   
+    padding-left:20px;
+    margin-right: 40px; 
+    font-weight: 500;
     font-size: 25px;
+   
    text-align: center;
    color: aliceblue;
    text-shadow: 1px 1px 1px black, 0 0 1px black; /* Параметры тени */
 
+}
+.progress{
+    background-color: rgba(0,0,0,0);
 }
 
  #myProgress1 {
@@ -263,6 +272,8 @@ a{
     height: 30px;
     background-color: #4caf50;
 } 
+
+
 
 
 
@@ -388,3 +399,111 @@ a{
 #footer p{
     margin-left: 110px;
 }
+
+
+
+
+
+
+
+
+
+
+#portfolio{
+    background-image: url('../assets/img/magic-particles-background-beautiful-background-with-light-effect-seamless-fullhd-animation_nnz970rue__F0000.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.allSlide{
+    padding: 50px;
+}
+
+.containerSlides {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: block;
+  }
+  .mySlides img{
+      max-width: 70%;
+    /* min-height: 400px; */
+    max-height: 700px;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 12.5%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.8;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }

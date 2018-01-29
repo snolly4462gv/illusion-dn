@@ -15,9 +15,12 @@ export class AppComponent {
   slideIndex = 1;
   tellNumberPhone:string = "";
   visibleTellMe:boolean = true;
+  portfolioSlide:number = 1;
+  curSlide:number = 1;
   constructor(){
 
      this.addScroll();
+     //this.showSlides(this.portfolioSlide);
 
   }
 
@@ -130,6 +133,44 @@ export class AppComponent {
     this.visibleTellMe = false;
   }
 
+
+
+
+
+//  plusSlides(n) {
+//   this.showSlides(this.slideIndex2 += n);
+// }
+
+//  currentSlide(n) {
+//   this.showSlides(this.slideIndex2 = n);
+// }
+
+// showSlides(n) {
+//   let countSlides = document.getElementsByClassName("mySlides").length;
+
+//   for(let i=1;i<=countSlides;i++){
+//     let el = document.getElementById("slide"+i);
+//     el.style.display="none";
+//    }
+//    let elem = document.getElementById("slide"+n);
+//    elem.style.display="block";
+//   // var slides = ;
+//   // var dots = document.getElementsByClassName("demo");
+//   // var captionText = 
+//   // if (n > slides.length) {this.slideIndex2= 1}
+//   // if (n < 1) {this.slideIndex2 = slides.length}
+//   // for (i = 0; i < slides.length; i++) {
+//   //     $(slides[i]).style.display  = "none";
+//   // }
+//   // for (i = 0; i < dots.length; i++) {
+//   //     dots[i].className = dots[i].className.replace(" active", "");
+//   // }
+//   //slides.item[this.slideIndex2-1].style.display = "block";
+//   // dots[this.slideIndex2-1].className += " active";
+//   // captionText.innerHTML = dots.item[this.slideIndex2-1].alt;
+
+//   // console.log($(slides[0]).style);
+// }
 
 
 
