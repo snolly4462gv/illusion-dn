@@ -126,11 +126,7 @@ a{
 }
 
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
-@media only screen and (max-device-width: 1024px) {
-    .parallax {
-        background-attachment: scroll;
-    }
-}
+
 
 
 /* CENTER BLOCK START */
@@ -507,3 +503,105 @@ a{
   .demo:hover {
     opacity: 1;
   }
+
+
+
+  @media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    .logo {
+        width: 100%;
+        padding-left: 15%;
+        padding-right: 15%;
+        
+        background-color:rgba(43, 51, 62, 0.185);
+    }
+    .icon-bar {
+        width: 180px;
+        background-color:#232A34;
+        position: fixed;
+        height: 100%;
+    }
+    
+    .icon-bar .tab-control {
+        border-top: 2px solid  #2B333E; 
+        display: block;
+        text-align: center;
+        padding: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        transition: all 0.3s ease;
+        color: #505865;
+        font-size: 16px;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 400;
+        letter-spacing: normal;
+        font-stretch: 100%;
+    
+    }
+    .icon-bar .tab-control .fa{
+        padding: 8px;
+        font-size: 20px;
+    }
+    
+    .icon-bar .tab-control:hover  {
+        background-color: rgba(0, 0, 0, 0.199);
+        text-decoration: none;
+        color: rgb(228, 227, 227);
+    }
+    
+    .active {
+        color:  #ECBE00;
+    }
+
+    .center-block{
+        position: absolute;
+        left:calc( 33% ) ;
+        right:calc( 33% - 210px ) ;
+        top: 130%;
+        height: auto;
+        background-color:#1C212A;
+        color: white; 
+    }
+
+    .volName{
+        font-family: 'Montserrat', sans-serif; 
+        padding-top:100px; 
+        font-weight: 550;
+        font-size: 50px;
+       text-align: center;
+       color: aliceblue;
+       text-shadow: 1px 1px 1px black, 0 0 1px black; /* Параметры тени */
+    
+    }
+
+    .text-main-title{
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 900;
+        padding-left: calc(27%);
+        padding-top: 100px;
+        font-size: 48px;
+        color: #ECBE00;
+        text-shadow: 2px 2px 3px black, 0 0 2px black; /* Параметры тени */
+         line-height: 150%;
+    }
+    .text-main-title.city{
+        padding-top: 20px;
+        font-size: 28px;
+        color: white;
+        padding-left: calc(50% );
+        text-shadow: 2px 2px 3px black, 0 0 2px black; /* Параметры тени */
+    }
+    
+    .contacts p{
+        font-size: 22px;
+        padding-top: 20px;
+        
+    }
+}
