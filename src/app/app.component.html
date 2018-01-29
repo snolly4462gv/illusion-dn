@@ -183,14 +183,52 @@
 
 <div style="height:1000px;background:#4D5466;padding:40px; padding-top:65px;" id="contacts">
   <div class="contacts">
-    <h1>
-      +38 066 964 37 99
-    </h1>
+    <p class="gold">
+      Свяжитесь со мной!
+    </p>
+    <br><br><hr>
 
-    <h1>
-        +38 071 358 37 78
-      </h1>
+    <p>
+      МТС +38 (066) 964 37 99
+    </p>
+    <p>
+      Феникс +38 (071) 358 37 78
+    </p>
+    <p>
+        snolly.gv@gmail.com
+    </p>
 
+   
+    <br><br><hr>
+
+    <div *ngIf="visibleTellMe">
+    <p>
+        Заказать звонок
+    </p>
+    <form  autocomplete="off" >
+      <div class="phonenumber" style="width:300px;">
+        <input class="inputNum textNum" name="number" [(ngModel)]="tellNumberPhone" type="text" placeholder="Ваш номер">
+      </div>
+      <input class="inputNum submitNum"  type="submit" value="Позвоните мне!" (click)="TellNumber()">
+    </form>
+    </div>
+
+    <div *ngIf="!visibleTellMe">
+        <p>Мы Вам перезвоним!</p>
+        <span href="#" class="fa fa-check"></span>
+    </div>
+
+
+    <br><br><hr>
+    <br>
+    <div class="socials">
+      <a href="https://vk.com/snolly" target="_blank" class="fa fa-vk"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-youtube-play"></a>
+      <a href="#" class="fa fa-telegram"></a>
+    </div>
+    <br>
   </div>
 </div>
 

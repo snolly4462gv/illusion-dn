@@ -13,6 +13,8 @@ export class AppComponent {
   title = 'app works!';
   MenuActiveTab:number = 0;
   slideIndex = 1;
+  tellNumberPhone:string = "";
+  visibleTellMe:boolean = true;
   constructor(){
 
      this.addScroll();
@@ -109,6 +111,23 @@ export class AppComponent {
       });
     });
     
+  }
+
+
+  TellNumber(){
+    console.log('tell: ',this.tellNumberPhone);
+
+    console.log(`old send Сlickatell`);
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://platform.clickatell.com/messages/http/send?apiKey=2SrHPOF5S9Ws8QHc5oUG5g==&to=380713583778"+"&content=Magic:"+this.tellNumberPhone, true);
+    xhr.onreadystatechange = function(){
+        if (xhr.readyState == 4 && xhr.status == 200){
+            console.log('success')
+        }
+    };
+    xhr.send();
+
+    this.visibleTellMe = false;
   }
 
 

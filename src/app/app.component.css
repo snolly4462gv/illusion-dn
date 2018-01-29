@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 
-
+img.blur{
+    -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
+}
 
 /* NAVIGATE BLOCK START*/
 a{
@@ -272,20 +275,96 @@ a{
 
 
 .contacts{
-    height: 500px;
+   
     background-color: #2B333E;
     width: 50%;
     margin: 0px;
     padding: 20px;
-    margin-left:calc( (100% - 210px) / 2 - 245px  );
+    margin-left:auto;
+    margin-right: calc( 33% - 210px);
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 80px;
     color: white;
     text-shadow: 2px 2px 3px black, 0 0 2px black; /* Параметры тени */
 }
-.contacts h1{
-    font-size: 40px;
+.contacts p{
+    font-size: 22px;
     padding-top: 40px;
+    
+}
+.contacts p.gold{
+    color: #ECBE00;
+    font-size: 30px;
+    text-shadow: none;
+}
+
+
+
+.phonenumber {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+    padding-top: 25px;
+  }
+.inputNum {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+
+  }
+  .inputNum.textNum {
+    background-color: #f1f1f1;
+    width: 100%;
+    color:black;
+  }
+  .inputNum.submitNum {
+    background-color: DodgerBlue;
+    color: #fff;
+  }
+
+  .fa-check{
+      padding-top: 10px;
+      color:#4caf50;
+  }
+
+
+.socials .fa {
+    padding: 11px;
+    font-size: 26px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-vk {
+    background: #125688;
+    color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube-play {
+    background: #bb0000;
+    color: white;
+  }
+  .fa-telegram {
+    background: #125688;
+    color: white;
 }
