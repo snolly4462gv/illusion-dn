@@ -135,12 +135,25 @@
           <!-- <div class="numbertext">7 / 6</div> -->
           <img src="../assets/img/IM GV2 blue.png">
         </div>
-          
-        <!-- <a class="prev" (click)="plusSlides(-1)">❮</a>
-        <a class="next" (click)="plusSlides(1)">❯</a> -->
+        <div class="mySlides" *ngIf="curSlide==8" id="slide8">
+          <!-- <div class="numbertext">7 / 6</div> -->
+          <img src="../assets/img/IM GV2 blue.png">
+        </div>
+        <div class="mySlides" *ngIf="curSlide==9" id="slide9">
+          <!-- <div class="numbertext">7 / 6</div> -->
+          <img src="../assets/img/IM GV2 blue.png">
+        </div>
+        <div class="mySlides" *ngIf="curSlide==10" id="slide10">
+          <!-- <div class="numbertext">7 / 6</div> -->
+          <img src="../assets/img/IM GV2 blue.png">
+        </div>
+          <br><br>
+        <a class="prev" (click)="plusSlides(-1)">❮</a>
+        <span>     </span>
+        <a class="next" (click)="plusSlides(1)">❯</a>
       
        
-      <br><br>
+      <br><br><br>
         <div class="row">
           <div class="column">
             <img class="demo cursor" src="../assets/img/IM GV2 blue.png" style="width:90%" (click)="curSlide=1" alt="The Woods">

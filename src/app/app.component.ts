@@ -137,9 +137,11 @@ export class AppComponent {
 
 
 
-//  plusSlides(n) {
-//   this.showSlides(this.slideIndex2 += n);
-// }
+ plusSlides(n) {
+ this.curSlide+=n;
+if(this.curSlide<1)this.curSlide=10;
+else if(this.curSlide>10)this.curSlide=1;
+}
 
 //  currentSlide(n) {
 //   this.showSlides(this.slideIndex2 = n);
