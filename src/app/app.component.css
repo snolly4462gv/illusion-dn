@@ -368,8 +368,8 @@ a{
 }
 
 /* Twitter */
-.fa-twitter {
-    background: #55ACEE;
+.fa-envelope-o {
+    background: #e91d1d;
     color: white;
 }
 
@@ -398,7 +398,54 @@ a{
 
 
 
+/* Create three equal columns that floats next to each other */
+.column-uslugi {
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+    /* float: left; */
+    /* clear: both; */
+    width: calc(33.33% - 20px);
+    vertical-align:top;
+    display: inline-block; /* Hide columns by default */
+    
+}
 
+
+
+/* Content */
+.content-column-uslugi {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.content-column-uslugi h4{
+    text-align: center;
+    font-size: 24px;
+    padding-top: 20px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 00;
+    letter-spacing: normal;
+    font-stretch: 100%;
+
+}
+
+.content-column-uslugi p{
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 100;
+    letter-spacing: normal;
+    font-stretch: 120%;
+    line-height: 25px;
+
+}
+.content-column-uslugi img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 
 
@@ -504,6 +551,11 @@ a{
     opacity: 1;
   }
 
+#uslugi{
+    background-image: url('../assets/img/fbe5e31fc4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
   @media only screen and (max-device-width: 1024px) {
@@ -572,7 +624,7 @@ a{
 
     .volName{
         font-family: 'Montserrat', sans-serif; 
-        padding-top:100px; 
+        padding-top:60px;
         font-weight: 550;
         font-size: 50px;
        text-align: center;
@@ -603,5 +655,16 @@ a{
         font-size: 22px;
         padding-top: 20px;
         
+    }
+
+    .column-uslugi {
+        padding-left: 40px;
+        padding-right: 20px;
+        padding-bottom: 100px;
+        /* float: left; */
+        /* clear: both; */
+        width: 100%;
+        /* vertical-align:top; */
+        display: block; 
     }
 }
