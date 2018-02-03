@@ -37,7 +37,7 @@ export class AppComponent {
       
         //узнаем высоту от начала страницы до блока на который ссылается якорь
           top = $(id).offset().top;
-        console.log(id, top);
+        //console.log(id, top);
         //анимируем переход на расстояние - top за 1500 мс
         //if(id=="#contacts")top-=400;
         $('body,html').animate({scrollTop: top}, 1400);
@@ -55,14 +55,14 @@ export class AppComponent {
           var hash = $(this).attr("href");
           
           var target = $(hash);
-         // console.log(`!`,$(this),hash,$(this).attr("href"),target);
+         // //console.log(`!`,$(this),hash,$(this).attr("href"),target);
     
-          console.log(target, target.position().top);
+          //console.log(target, target.position().top);
           if (target.position().top <= scroll_top +320 && target.position().top + target.outerHeight() > scroll_top) {
           //  $(menu_selector + " a span.active").addClass("active");
           // $(a span.active).addClass("active");
           $("a span.active").removeClass("active");
-           console.log(`this = `, $(this).context.hash);
+           //console.log(`this = `, $(this).context.hash);
             var nn=$(this).context.hash;
             
             $("a[href^="+nn+"] span").addClass("active");
@@ -90,7 +90,28 @@ export class AppComponent {
             },800)
               
             }
+            else if(nn=="#why_i"){
+              let elem = document.getElementById("timeline");
+              //console.log(`ADD RED TIMELINE`);
+              elem.className+="activeTimeline";
+            //   let bottom = 100;
+            //   var timerTimeline = setInterval(()=>{
+            //     {
+            //       if (bottom > 0)  {
+            //           bottom--; 
+            //           elem.style.bottom = bottom + '%'; 
+            //           //elem.setAttribute('data-value', '100px');
+                                  
+            //       }
+            //       else {clearInterval(timerTimeline);
+            //         }
+            //   }           
+            // }, 10);
+            }
+
+
           } else {
+
           //  $("a span.active").removeClass("active");
           }
         });
@@ -118,19 +139,23 @@ export class AppComponent {
 
 
   TellNumber(){
-    console.log('tell: ',this.tellNumberPhone);
+    //console.log('tell: ',this.tellNumberPhone);
 
-    console.log(`old send Сlickatell`);
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://platform.clickatell.com/messages/http/send?apiKey=2SrHPOF5S9Ws8QHc5oUG5g==&to=380713583778"+"&content=Magic:"+this.tellNumberPhone, true);
-    xhr.onreadystatechange = function(){
-        if (xhr.readyState == 4 && xhr.status == 200){
-            console.log('success')
-        }
-    };
-    xhr.send();
+    // //console.log(`old send Сlickatell`);
+    // var xhr = new XMLHttpRequest();
+    // xhr.open("GET", "https://platform.clickatell.com/messages/http/send?apiKey=2SrHPOF5S9Ws8QHc5oUG5g==&to=380713583778"+"&content=Magic:"+this.tellNumberPhone, true);
+    // xhr.onreadystatechange = function(){
+    //     if (xhr.readyState == 4 && xhr.status == 200){
+    //         //console.log('success')
+    //     }
+    // };
+    // xhr.send();
 
+    
+  
+    
     this.visibleTellMe = false;
+
   }
 
 
@@ -171,7 +196,7 @@ else if(this.curSlide>10)this.curSlide=1;
 //   // dots[this.slideIndex2-1].className += " active";
 //   // captionText.innerHTML = dots.item[this.slideIndex2-1].alt;
 
-//   // console.log($(slides[0]).style);
+//   // //console.log($(slides[0]).style);
 // }
 
 
