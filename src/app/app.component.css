@@ -17,7 +17,7 @@ a{
     font-family: 'Montserrat', sans-serif; 
     padding-top:100px; 
     font-weight: 600;
-    font-size: 70px;
+    font-size: 4vw;
     text-align: center;
     color: aliceblue;
     text-shadow: 1px 1px 1px black, 0 0 1px black; /* Параметры тени */
@@ -95,18 +95,18 @@ a{
 .main-title.name{
     padding-top: 75px;
     font-weight: 900;
-    font-size: 80px;
+    font-size: 6.4vw;
     text-shadow: 2px 2px 3px black, 0 0 2px black; /* Параметры тени */
 }
 .main-title.illusionist{
-    font-size: 20px;
+    font-size: 2.0vw;
   
 }
 .main-title.show{
     font-family: 'Montserrat', sans-serif; 
     font-weight: 900;
     /* padding-left: calc(27%); */
-    font-size: 48px;
+    font-size: 4vw;
     color: #ECBE00;
     text-shadow: 2px 2px 3px black, 0 0 2px black; /* Параметры тени */
     line-height: 150%;
@@ -176,13 +176,14 @@ a{
     background-color: rgba(35, 42, 52, 0.466);
 }
 .progress{
+    background-color: #00000000;
     padding-top: 30px;
     padding-left:calc(20% + 215px);
     padding-left: 20%; 
     width: 80%;
     align-content: center;
     height: auto;
-    background-color: #00000000;
+   
 }
 .progress span{
     font-family: 'Montserrat', sans-serif;   

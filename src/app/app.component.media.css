@@ -76,9 +76,29 @@
         display: none;
     }
 
+    .main-title.name{
+       
+        font-size: 9vw;
+        
+    }
+    .main-title.illusionist{
+        font-size: 5vw;
+      
+    }
+    .main-title.show{
+        font-size: 7vw;
+    }
+    .main-title.city{
+        font-size: 6vw;
+    }
+
     .center-block{
         width: 80%;
         right:10% ;
         left: 10%;
     }
+    .progress{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
 }
