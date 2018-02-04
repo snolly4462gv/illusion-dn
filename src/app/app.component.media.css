@@ -31,12 +31,30 @@
         font-size: 50px;
     }
     
+    .main-title.name{
+       
+        font-size: 7vw;
+        
+    }
+    .main-title.illusionist{
+        font-size: 2.5vw;
+      
+    }
+    .main-title.show{
+        font-size: 5vw;
+    }
+    .main-title.city{
+        font-size: 3.0vw;
+        padding-bottom: 50px;
+    }
   
     .center-block{
         width: 50%;
         right:calc( 25% - 140px ) ;
         left: 25%;
     }
+
+
     
     
     
@@ -58,6 +76,66 @@
     .container-timeline h2{
         font-size: 22px;
     }
+
+    #timeline::after {
+        left: 30px;
+        }
+        
+        /* Full-width containers */
+        .container-timeline {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        }
+        
+        /* Make sure that all arrows are pointing leftwards */
+        .container-timeline::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+        }
+        
+        /* Make sure all circles are at the same spot */
+        .left-timeline::after, .right-timeline::after {
+        left: 15px;
+        }
+        
+        /* Make all right containers behave like the left ones */
+        .right-timeline {
+        left: 0%;
+        }
+
+
+        #contacts{
+           
+            padding: 20px;
+            height: auto;
+        }
+        .contacts{
+            background-color: #2B333E;
+            width: 80%;
+            margin-left: 10%;
+            padding: 30px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 0px;
+            color: white;
+            text-shadow: 2px 2px 3px black, 0 0 2px black; /* Параметры тени */
+        }
+
+        .contacts p{
+            font-size: 2.0vw;
+            padding-top: 20px;
+        
+        }
+
+        .contacts p.gold{
+            color: #ECBE00;
+            font-size: 20px;
+            text-shadow: none;
+        }
 }
 
 
