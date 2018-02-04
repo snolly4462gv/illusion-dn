@@ -41,7 +41,7 @@
       <br><br>
         <!-- Центральный БЛОК С ВИДЕО -->
         <div class="center-block" >      
-            <iframe style="padding-top:35px;" id="player" src="https://player.vimeo.com/video/250352302?title=false&author_name=false&author_logo=false&byline=false&api=1&player_id=player" width="100%" height="450px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe class="player" src="https://player.vimeo.com/video/250352302?title=false&author_name=false&author_logo=false&byline=false&api=1&player_id=player" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             <p>Если у вас намечается свадьба, юбилей, корпоративное мероприятие, вечеринка, день рождения, наполните его волшебством! Звоните!</p>
             <a href="#contacts"><p>Да, я хочу, чтобы о моем событии говорили с восторгом</p></a>
         </div> 
@@ -119,6 +119,7 @@
             
           <div class="mySlides" *ngIf="curSlide==4" id="slide4">
             <!-- <div class="numbertext">4 / 6</div> -->
+            <img src="../assets/img/portfolio/JgR8TOnxPT0.jpg">
           </div>
         
           <div class="mySlides" *ngIf="curSlide==5" id="slide5">
@@ -295,11 +296,12 @@
                   </div>            
         </div>
       
-    </div>
+  </div>
 
 
     <!-- КОНТАКТЫ -->
-  <div style="height:960px; padding-top:100px;" id="contacts">
+  
+  <div id="contacts">
     <div class="contacts">
       <p class="gold">
         Свяжитесь со мной!

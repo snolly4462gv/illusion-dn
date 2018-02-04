@@ -66,6 +66,12 @@
 
 @media only screen and (max-width: 768px) {
 
+    .volName{
+        
+        font-size: 8vw;
+       
+    }
+
     .parallax {
         background-attachment: scroll; 
     } 
@@ -90,15 +96,127 @@
     }
     .main-title.city{
         font-size: 6vw;
+        padding-bottom: 50px;
     }
 
     .center-block{
-        width: 80%;
-        right:10% ;
-        left: 10%;
+        width: 88%;
+        right:6% ;
+        left: 6%;
+    }
+    .center-block p{
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 400;
+        letter-spacing: normal;
+        font-stretch: 100%;
+        font-size: 17px;
+        padding: 25px;
+        padding-bottom: 0px;
+        line-height: 160%;
+        text-align: center;
+    }
+
+    .player{
+        height: 200px;
+        padding: 10px;
+    }
+
+    .parallax.cards .cards-content{
+        padding-top: 140px;
+        width: 100%;
     }
     .progress{
         background-color: rgba(0, 0, 0, 0);
     }
+
+    .progress span{  
+        padding-left:20px;
+        font-weight: 500;
+        font-size: 4vw;
+    
+    }
+    .allSlide{
+        padding: 10px;
+    }
+
+    .mySlides img{
+        max-width: 100%;
+    /* min-height: 400px; */
+    max-height: 700px;
+    }
+
+    #timeline {
+
+        width: 85%;
+      
+        }
+        
+    .container-timeline h2{
+        font-size: 4.75vw;
+        padding: 12px;
+        }
+
+        .column-uslugi {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 50px;
+            /* float: left; */
+            /* clear: both; */
+           
+        
+            
+            }
+            
+            
+            
+            /* Content */
+            .content-column-uslugi {
+            background-color: white;
+            padding: 20px;
+            border-radius: 4px;
+            }
+
+
+
+
+        #contacts{
+           
+            padding: 20px;
+            height: auto;
+        }
+        .contacts{
+            background-color: #2B333E;
+            width: 90%;
+            margin-left: 5%;
+            padding: 30px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 40px;
+            color: white;
+            text-shadow: 2px 2px 3px black, 0 0 2px black; /* Параметры тени */
+        }
+
+        .contacts p{
+            font-size: 4vw;
+            padding-top: 20px;
+        
+        }
+
+        .contacts p.gold{
+            color: #ECBE00;
+            font-size: 20px;
+            text-shadow: none;
+        }
+
+        .socials .fa {
+            padding: 9px;
+            font-size: 18px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+    
     
 }
