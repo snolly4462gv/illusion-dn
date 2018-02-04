@@ -1,0 +1,84 @@
+@media only screen and (max-device-width: 1024px) {
+
+    .icon-bar {
+        width: 140px;
+        max-height: 100%;
+        overflow-y: auto;
+    }
+    .logo {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .icon-bar .tab-control {
+        padding: 6px;
+        font-size: 14px;
+        font-weight: 400;
+        min-height: 10%;
+    }
+    .icon-bar .tab-control .fa{
+        padding: 6px;
+        font-size: 20px;
+    }
+    
+
+    .AllContent{
+        padding-left: 140px;
+    }
+
+    .volName{
+        padding-top:60px;
+        font-weight: 550;
+        font-size: 50px;
+    }
+    
+  
+    .center-block{
+        width: 50%;
+        right:calc( 25% - 140px ) ;
+        left: 25%;
+    }
+    
+    
+    
+    .contacts p{
+        font-size: 22px;
+        padding-top: 20px;
+        
+    }
+    
+    .column-uslugi {
+        margin: 0;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 100px;
+        width: 100%;
+        display: block; 
+    }
+    
+    .container-timeline h2{
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .parallax {
+        background-attachment: scroll; 
+    } 
+    .AllContent{
+        padding-left: 0px;
+    }
+    .icon-bar {
+        display: none;
+    }
+
+    .center-block{
+        width: 80%;
+        right:10% ;
+        left: 10%;
+    }
+}
