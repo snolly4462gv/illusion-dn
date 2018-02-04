@@ -36,6 +36,7 @@ a{
     background-color:#232A34;
     position: fixed;
     height: 100%;
+  
 }
 .icon-bar .tab-control {
     border-top: 2px solid  #2B333E; 
@@ -52,7 +53,7 @@ a{
     font-weight: 400;
     letter-spacing: normal;
     font-stretch: 100%;
-
+    max-height: calc(100% / 6);
 }
 .icon-bar .tab-control .fa{
     padding: 8px;
@@ -188,7 +189,7 @@ a{
     background-color: rgba(35, 42, 52, 0.466);
 }
 .progress{
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     padding-top: 30px;
     padding-left:calc(20% + 215px);
     padding-left: 20%; 
@@ -203,7 +204,7 @@ a{
     margin-right: 40px; 
     font-weight: 500;
     font-size: 25px;
-
+    background-color: rgba(0, 0, 0, 0);
     text-align: center;
     color: aliceblue;
     text-shadow: 1px 1px 1px black, 0 0 1px black; /* Параметры тени */
